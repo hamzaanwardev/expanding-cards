@@ -1,3 +1,4 @@
+// Adding click event and active class
 const panels = document.querySelectorAll(".panel")
 
 panels.forEach(panel => {
@@ -8,7 +9,7 @@ panels.forEach(panel => {
     })
 
 })
-
+// fuction for removing active class
 function removeActiveClasses(){
     panels.forEach(panel => {
         panel.classList.remove('active')

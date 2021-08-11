@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
+/* Reset */
 * {
    
     box-sizing: border-box;
 }
-
+/* Body */
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -14,11 +14,13 @@ body {
     margin: 0;
     overflow: hidden ;
 }
+/* Container */
 .container {
     display: flex;
     width: 90vw;
 }
 
+/* Panel */
 .panel {
     background-size: auto 100%;
     background-position: center;
@@ -32,6 +34,8 @@ body {
     position: relative;
     transition: flex 0.7s ease-in;
 }
+
+/* Text of panels */
 .panel h3 {
     font-size: 24px;
     position: absolute;
@@ -39,15 +43,16 @@ body {
     left: 50px;
     opacity: 0;
 }
+ /* Adjusting width of panel having active class */
 .panel.active {
     flex: 5;
 }
-
+/* Panel Text Visibility */
 .panel.active h3  {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
-
+/* Responsive */
 @media (max-width: 480px) {
     .container {
         width: 100vw;
